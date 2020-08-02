@@ -1,0 +1,84 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    text-align: center;
+    background-color: black;
+}
+
+h1{
+    margin: 50px;
+    color: red;
+    font-size: 4rem;
+    text-shadow: 3px 5px 10px #333;
+}
+
+#lightOff{
+    position: relative;
+    left: 200px;
+}
+
+#lightOn {
+    position: relative;
+    left: -74px;
+    z-index: 1;
+    visibility: hidden;
+}
+
+.btn{
+    display: inline-block;
+    padding: 20px;
+    color: white;
+    border-radius: 10px;
+    background-color: red;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+@media screen and (max-width: 600px){
+    h1{
+        font-size: 45px;
+    }
+    #lightOff {
+        position: relative;
+        left: 10px;
+        top: 50px;
+    }
+
+    #lightOn {
+        position: relative;
+        left: 39px;
+        top: -355px;
+    }
+
+    .btn {
+        position: relative;
+        top: -780px;
+        left: -132px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    h1{
+        font-size: 2rem;
+        margin: 50px auto 20px;
+    }
+
+    #lightOn {
+        position: relative;
+        left: 5px;
+        top: -355px;
+        
+    }
+
+    .btn {
+        position: relative;
+        top: -320px;
+        left: 5px;
+    }
+    
+}
